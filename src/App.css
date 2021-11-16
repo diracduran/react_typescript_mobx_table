@@ -32,10 +32,11 @@ td {
     font-weight: 400;
 }
   
-form {
+/* form {
     display: flex;
-    gap: 5px;
-}
+    justify-content: space-between;
+    gap: 5px; 
+} */
   
 /* form td:last-child {
     display: flex;
@@ -49,4 +50,53 @@ form * {
 th,
 h2 {
     font-weight: 600;
+}
+
+.controls form input {
+    padding: 8px;
+    margin-right: 8px;
+    outline: none;
+}
+
+.controls form input[name="fullName"] {
+    width: 275px;
+}
+
+.controls form input[name="birthdate"] {
+    width: 155px;
+}
+
+.controls form input[name="phone"] {
+    width: 85px;
+}
+
+.controls form input[name="email"] {
+    width: 185px;
+}
+
+.controls form input[name="workedDays"] {
+    width: 250px;
+}
+
+.controls form input[name="salaryPerDay"] {
+    width: 285px;
+}
+
+.controls form button {
+    background-color: rgb(117, 201, 250);
+    border: 1px solid gray;
+    width:115px;
+    padding: 9px;
+}
+
+.controls form button:hover {
+    background-color: rgb(95, 194, 252);
+}
+
+.controls form button:active {
+    background-color: rgb(0, 162, 255);
+}
+
+.controls form button:disabled {
+    background-color: rgb(196, 233, 255);
 }

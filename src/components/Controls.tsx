@@ -40,6 +40,7 @@ const Controls = observer((props:Props) => {
           workedDays: addFormData.workedDays,
           salaryPerDay: addFormData.salaryPerDay,
         };
+
         
         //const newWorkers = [...workers, newWorker]; // новый массив работников с новым работником
         props.store!.addWorker(newWorker);
@@ -54,34 +55,44 @@ const Controls = observer((props:Props) => {
                 type="text"
                 name="fullName"
                 placeholder="ФИО"
+                required
                 onChange={handleAddFormChange}
                 />
                 <input
                 type="text"
                 name="birthdate"
                 placeholder="Дата рождения"
-                onChange={handleAddFormChange}
-                />
-                <input
-                type="text"
-                name="phone"
-                placeholder="Телефон"
+                required
                 onChange={handleAddFormChange}
                 />
                 <input
                 type="email"
                 name="email"
                 placeholder="Эл. почта"
+                required
+                onChange={handleAddFormChange}
+                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+                />
+                <input
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+                pattern="[\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}" 
+                required
                 onChange={handleAddFormChange}
                 />
                 <input
-                type="text"
+                type="number" 
+                min="0" 
+                step="1"
                 name="workedDays"
                 placeholder="Кол-во отраб. дней"
                 onChange={handleAddFormChange}
                 />
                 <input
-                type="text"
+                type="number" 
+                min="0" 
+                step="1"
                 name="salaryPerDay"
                 placeholder="Зарплатн. ставка на день"
                 onChange={handleAddFormChange}

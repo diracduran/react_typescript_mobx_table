@@ -1,6 +1,6 @@
 [
-    { "id": "1", "fullName": "Иван Иванович Иванов", "birthdate": "1.1.1973","email": "ivan@ivanov.ru", "phone": "1234567", "workedDays": "1100", "salaryPerDay": "1800"},
-    { "id": "2", "fullName": "Пётр Петрович Петров", "birthdate": "1.1.1973","email": "petr@petrov.ru", "phone": "1234568", "workedDays": "1300", "salaryPerDay": "1300" },
-    { "id": "3", "fullName": "Роман Романович Романов", "birthdate": "1.1.1973","email": "roman@romanov.ru", "phone": "1234569", "workedDays": "110", "salaryPerDay": "1666" },
-    { "id": "4", "fullName": "Юрий Юрьевич Юрьев", "birthdate": "1.1.1973","email": "yuri@yuriev.ru", "phone": "1234560", "workedDays": "2000", "salaryPerDay": "2000" }
+    { "id": "1", "fullName": "Иванов Иван Иванович", "birthdate": "1.1.1973","email": "ivan@ivanov.ru", "phone": "1234567", "workedDays": "1100", "salaryPerDay": "1800"},
+    { "id": "2", "fullName": "Петров Пётр Петрович", "birthdate": "1.1.1973","email": "petr@petrov.ru", "phone": "1234568", "workedDays": "1300", "salaryPerDay": "1300" },
+    { "id": "3", "fullName": "Романов Роман Романович", "birthdate": "1.1.1973","email": "roman@romanov.ru", "phone": "1234569", "workedDays": "110", "salaryPerDay": "1666" },
+    { "id": "4", "fullName": "Юрьев Юрий Юрьевич", "birthdate": "1.1.1973","email": "yuri@yuriev.ru", "phone": "1234560", "workedDays": "2000", "salaryPerDay": "2000" }
 ]

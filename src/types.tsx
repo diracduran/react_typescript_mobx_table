@@ -15,8 +15,6 @@ export interface Props {
     store?: Store;
 }
 
-
-
 export interface AddFormData {
     fullName: string;
     birthdate: string;

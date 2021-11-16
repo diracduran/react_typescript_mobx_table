@@ -31,7 +31,7 @@ const Worker = (props:Props) => {
                             <tr>
                                 <th>Дата рождения: </th>
                                 <td>
-                                    <DatePicker wrapperClassName="datePicker" dateFormat="dd/MM/yyyy" selected={birthDate} onChange={(date: Date | null) => setBirthDate(date!)} locale='ru' />
+                                    <DatePicker wrapperClassName="datePicker" dateFormat="yyyy/MM/dd" selected={birthDate} onChange={(date: Date | null) => setBirthDate(date!)} locale='ru' />
                                 </td>
                             </tr>
                             <tr>

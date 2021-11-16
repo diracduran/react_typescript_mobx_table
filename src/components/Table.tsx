@@ -11,9 +11,9 @@ import { Props } from "../types";
                 <thead>
                     <tr>
                     <th>ФИО</th>
-                    <th>Телефон</th>
                     <th>Дата рождения</th>
                     <th>Эл. почта</th>
+                    <th>Телефон</th>
                     <th>Кол-во отработан. дней</th>
                     <th>Зарплатная ставка на день</th>
                     <th>Зарплата</th>
@@ -32,11 +32,11 @@ import { Props } from "../types";
                         </tr>
                     ))}
                 </tbody>
-                <tfoot>
                     <tr>
                         <td colSpan={6} style={{textAlign: 'right'}}>Σ: </td>
                         <td>{this.props.store!.totalSum}</td>
                     </tr>
+                <tfoot>
                 </tfoot>
             </table>
         );
