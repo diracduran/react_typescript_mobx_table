@@ -10,7 +10,9 @@ import { Props } from "../types";
             <table>
                 <thead>
                     <tr>
-                    <th>ФИО</th>
+                    <th>Фамилия</th>
+                    <th>Имя</th>
+                    <th>Отчество</th>
                     <th>Дата рождения</th>
                     <th>Эл. почта</th>
                     <th>Телефон</th>
@@ -21,8 +23,10 @@ import { Props } from "../types";
                 </thead>
                 <tbody>
                     {this.props.store!.workersList.map(worker => (
-                        <tr key={worker.id}>                    
-                            <td><Link to={ `/${worker.id}`}>{worker.fullName}</Link></td>
+                        <tr key={worker.id}>   
+                            <td><Link to={ `/${worker.id}`}>{worker.lastName}</Link></td>
+                            <td><Link to={ `/${worker.id}`}>{worker.middleName}</Link></td>
+                            <td><Link to={ `/${worker.id}`}>{worker.firstName}</Link></td>
                             <td>{worker.birthdate}</td>
                             <td>{worker.email}</td>
                             <td>{worker.phone}</td>
@@ -33,7 +37,7 @@ import { Props } from "../types";
                     ))}
                 </tbody>
                     <tr>
-                        <td colSpan={6} style={{textAlign: 'right'}}>Σ: </td>
+                        <td colSpan={8} style={{textAlign: 'right'}}>Σ: </td>
                         <td>{this.props.store!.totalSum}</td>
                     </tr>
                 <tfoot>

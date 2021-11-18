@@ -58,12 +58,21 @@ h2 {
     outline: none;
 }
 
-.controls form input[name="fullName"] {
-    width: 275px;
+.controls form input[name="lastName"] {
+    width: 90px;
+}
+
+.controls form input[name="middleName"] {
+    width: 95px;
+}
+
+.controls form input[name="firstName"] {
+    width: 85px;
 }
 
 .controls form input[name="birthdate"] {
-    width: 155px;
+    width: 150px;
+    padding: 6.5px;
 }
 
 .controls form input[name="phone"] {
@@ -71,21 +80,21 @@ h2 {
 }
 
 .controls form input[name="email"] {
-    width: 185px;
+    width: 175px;
 }
 
 .controls form input[name="workedDays"] {
-    width: 250px;
+    width: 235px;
 }
 
 .controls form input[name="salaryPerDay"] {
-    width: 285px;
+    width: 275px;
 }
 
 .controls form button {
     background-color: rgb(117, 201, 250);
     border: 1px solid gray;
-    width:115px;
+    width:105px;
     padding: 9px;
 }
 

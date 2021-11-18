@@ -21,8 +21,16 @@ const Worker = (props:Props) => {
                     return (
                         <table key={worker.id} id={worker.id}>
                             <tr>
-                                <th>ФИО: </th>
-                                <td>{worker.fullName}</td>
+                                <th>Фамилия: </th>
+                                <td>{worker.lastName}</td>
+                            </tr>
+                            <tr>
+                                <th>Имя: </th>
+                                <td>{worker.middleName}</td>
+                            </tr>
+                            <tr>
+                                <th>Отчество: </th>
+                                <td>{worker.lastName}</td>
                             </tr>
                             <tr>
                                 <th>Телефон: </th>

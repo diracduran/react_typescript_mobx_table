@@ -6,7 +6,9 @@ import { AddFormData, Props, Workers } from "../types";
 const Controls = observer((props:Props) => {
 
     const [addFormData, setAddFormData] = useState<AddFormData>({
-        fullName: "",
+        lastName: "",
+        middleName: "",
+        firstName: "",
         birthdate: "",
         phone: "",
         email: "",
@@ -33,7 +35,9 @@ const Controls = observer((props:Props) => {
     
         const newWorker: Workers = {
           id: nanoid(),
-          fullName: addFormData.fullName,
+          lastName: addFormData.lastName,
+          middleName: addFormData.middleName,
+          firstName: addFormData.firstName,
           birthdate: addFormData.birthdate,
           phone: addFormData.phone,
           email: addFormData.email,
@@ -47,22 +51,41 @@ const Controls = observer((props:Props) => {
         //setWorkers(newWorkers);
         setAddFormData(addFormData);
     };
+    
 
     return (
       <div className="controls">
             <form onSubmit={handleAddFormSubmit}>
                 <input
                 type="text"
-                name="fullName"
-                placeholder="ФИО"
+                name="lastName"
+                placeholder="Фамилия"
                 required
+                pattern="^[А-Яа-яЁё]+$"
                 onChange={handleAddFormChange}
                 />
                 <input
                 type="text"
+                name="middleName"
+                placeholder="Имя"
+                required
+                pattern="^[А-Яа-яЁё]+$"
+                onChange={handleAddFormChange}
+                />
+                <input
+                type="text"
+                name="firstName"
+                placeholder="Отчество"
+                required
+                pattern="^[А-Яа-яЁё]+$"
+                onChange={handleAddFormChange}
+                />
+                <input
+                type="date"
                 name="birthdate"
                 placeholder="Дата рождения"
                 required
+                pattern="yyy/MM/dd"
                 onChange={handleAddFormChange}
                 />
                 <input
@@ -76,7 +99,7 @@ const Controls = observer((props:Props) => {
                 <input
                 type="tel"
                 name="phone"
-                placeholder="Телефон"
+                placeholder="+7(___)___-__-__"
                 pattern="[\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}" 
                 required
                 onChange={handleAddFormChange}
