@@ -59,11 +59,11 @@ h2 {
 }
 
 .controls form input[name="lastName"] {
-    width: 90px;
+    width: 85px;
 }
 
 .controls form input[name="middleName"] {
-    width: 95px;
+    width: 85px;
 }
 
 .controls form input[name="firstName"] {
@@ -76,7 +76,7 @@ h2 {
 }
 
 .controls form input[name="phone"] {
-    width: 85px;
+    width: 130px;
 }
 
 .controls form input[name="email"] {
@@ -84,11 +84,11 @@ h2 {
 }
 
 .controls form input[name="workedDays"] {
-    width: 235px;
+    width: 220px;
 }
 
 .controls form input[name="salaryPerDay"] {
-    width: 275px;
+    width: 260px;
 }
 
 .controls form button {
